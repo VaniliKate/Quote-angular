@@ -1,0 +1,641 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins" sans-serif;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+}
+.navbar-nav :visited a,
+.navbar-nav :hover a,
+.navbar-nav :active a,
+.navbar-nav:focus a,
+.navbar-nav :link a {
+  color: red !important;
+}
+
+.nav-link {
+  color: white !important;
+  font-family: "Poppins" sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.navbar {
+  background-color: rgba(67, 241, 23, 0.9);
+}
+
+.navbar .sign-up-btn {
+  min-width: 110px;
+  max-height: 36px;
+}
+.cintro {
+  height: 60vh;
+  width: 100vw;
+  align-items: center;
+  background-image: url(./cimage/cbackground.webp);
+  background-size: cover;
+  position: relative;
+}
+.ctop {
+  position: absolute;
+  height: 60vh;
+  width: 100vw;
+  background: rgb(0, 0, 0, 0.4);
+}
+.bagtwo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cleft {
+  margin-top: 30px;
+}
+.cright {
+  margin-top: 30px;
+}
+.ctext {
+  color: aliceblue;
+  text-align: center;
+  font-size: larger;
+  font-weight: bolder !important;
+}
+.ctext h1 {
+  font-weight: bolder !important;
+  font-size: 60px;
+  margin-top: 50px;
+}
+.ctext button a {
+  text-decoration: none;
+  color: azure;
+  font-weight: bolder !important;
+  font-size: 20px;
+}
+.cone {
+  background-image: url(./cimage/vegi.jpeg);
+  height: 95vh;
+  width: 100vw;
+  background-size: cover;
+  position: relative;
+}
+.coverlay {
+  height: 95vh;
+  width: 100vw;
+  position: absolute;
+  background: rgb(0, 0, 0, 0.3);
+}
+.cart {
+  border: solid white 1px;
+  height: 70vh;
+  width: 70vw;
+  margin-left: 250px;
+  margin-top: 100px;
+  background: white;
+  text-align: center;
+}
+.cart h3 {
+  font-size: 50px !important;
+  font-weight: bolder;
+}
+#cart {
+  height: 40px;
+  width: 50px;
+  border-radius: 10px;
+  background: transparent;
+  color: azure;
+  font-size: 20px;
+}
+#cart:hover {
+  background-color: chartreuse;
+}
+.cimage {
+  height: 100vh;
+  width: 100vw;
+}
+.ctwo {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+.ctwo h1 {
+  font-size: 50px;
+  color: rgba(67, 241, 23, 0.9);
+  font-weight: bolder;
+}
+.ctwo h2 {
+  font-weight: bolder;
+  text-align: left;
+  text-decoration: underline 3px rgb(26, 228, 26);
+  margin-left: 140px;
+}
+.ccontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.cboxone {
+  height: 30vh;
+  width: 20vw;
+  border: solid 1px black;
+  background-image: url(./cimage/meat.jpeg);
+  position: relative;
+  border-radius: 5px;
+}
+.ccoverone {
+  position: absolute;
+  height: 30vh;
+  width: 20vw;
+  text-align: center;
+  font-weight: bolder;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: azure;
+  display: none;
+}
+.ccontainer h6 {
+  font-weight: bolder;
+  font-size: 30px;
+  margin-top: 60px;
+}
+/* boxtwo */
+.cboxtwo {
+  height: 30vh;
+  width: 20vw;
+  border: solid 1px black;
+  background-image: url(./cimage/chicken.jpg);
+  position: relative;
+  border-radius: 5px;
+}
+.ccovertwo {
+  position: absolute;
+  height: 30vh;
+  width: 20vw;
+  text-align: center;
+  font-weight: bolder;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: azure;
+  display: none;
+}
+.ccontainer h6 {
+  font-weight: bolder;
+  font-size: 30px;
+  margin-top: 60px;
+}
+/* box three */
+.cboxthree {
+  height: 30vh;
+  width: 20vw;
+  border: solid 1px black;
+  background-image: url(./cimage/pork.jpg);
+  position: relative;
+  border-radius: 5px;
+}
+.ccoverthree {
+  position: absolute;
+  height: 30vh;
+  width: 20vw;
+  text-align: center;
+  font-weight: bolder;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: azure;
+  display: none;
+}
+.ccontainer h6 {
+  font-weight: bolder;
+  font-size: 30px;
+  margin-top: 60px;
+}
+/* //containerone */
+.ccontainerone {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+.cboxfour {
+  height: 30vh;
+  width: 20vw;
+  border: solid 1px black;
+  background-image: url(./cimage/fish2.webp);
+  position: relative;
+  border-radius: 5px;
+}
+.ccoverfour {
+  position: absolute;
+  height: 30vh;
+  width: 20vw;
+  text-align: center;
+  font-weight: bolder;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: azure;
+  display: none;
+}
+.ccontainerone h6 {
+  font-weight: bolder;
+  font-size: 30px;
+  margin-top: 60px;
+}
+/* boxfive */
+.cboxfive {
+  height: 30vh;
+  width: 20vw;
+  border: solid 1px black;
+  background-image: url(./cimage/mutton.webp);
+  position: relative;
+  border-radius: 5px;
+}
+.ccoverfive {
+  position: absolute;
+  height: 30vh;
+  width: 20vw;
+  text-align: center;
+  font-weight: bolder;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: azure;
+  display: none;
+}
+.ccontainerone h6 {
+  font-weight: bolder;
+  font-size: 30px;
+  margin-top: 60px;
+}
+/* boxsix */
+.cboxsix {
+  height: 30vh;
+  width: 20vw;
+  border: solid 1px black;
+  background-image: url(./cimage/meat.jpeg);
+  position: relative;
+  border-radius: 5px;
+}
+.ccoversix {
+  position: absolute;
+  height: 30vh;
+  width: 20vw;
+  text-align: center;
+  font-weight: bolder;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: azure;
+  display: none;
+}
+.ccontainerone h6 {
+  font-weight: bolder;
+  font-size: 30px;
+  margin-top: 60px;
+}
+/* cthree */
+.cthree {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  background: linear-gradient(white, rgb(27, 199, 27));
+}
+.cthree h2 {
+  font-weight: bolder;
+  text-align: left;
+  text-decoration: underline 3px rgb(26, 228, 26);
+  margin-left: 140px;
+}
+.cthree p {
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: bolder;
+  color: white;
+}
+/* containertwo */
+.ccontainertwo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* boxseven */
+.cboxseven {
+  height: 30vh;
+  width: 20vw;
+  border: solid 1px black;
+  background-image: url(./cimage/berrys.webp);
+  position: relative;
+  border-radius: 5px;
+}
+.ccoverseven {
+  position: absolute;
+  height: 30vh;
+  width: 20vw;
+  text-align: center;
+  font-weight: bolder;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: azure;
+  display: none;
+}
+.ccontainertwo h6 {
+  font-weight: bolder;
+  font-size: 30px;
+  margin-top: 60px;
+}
+/* boxeight */
+.cboxeight {
+  height: 30vh;
+  width: 20vw;
+  border: solid 1px black;
+  background-image: url(./cimage/oranges.webp);
+  position: relative;
+  border-radius: 5px;
+}
+.ccovereight {
+  position: absolute;
+  height: 30vh;
+  width: 20vw;
+  text-align: center;
+  font-weight: bolder;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: azure;
+  display: none;
+}
+.ccontainertwo h6 {
+  font-weight: bolder;
+  font-size: 30px;
+  margin-top: 60px;
+}
+/* boxnine */
+.cboxnine {
+  height: 30vh;
+  width: 20vw;
+  border: solid 1px black;
+  background-image: url(./cimage/peas.webp);
+  position: relative;
+  border-radius: 5px;
+}
+.ccovernine {
+  position: absolute;
+  height: 30vh;
+  width: 20vw;
+  text-align: center;
+  font-weight: bolder;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: azure;
+  display: none;
+}
+.ccontainertwo h6 {
+  font-weight: bolder;
+  font-size: 30px;
+  margin-top: 60px;
+}
+/* //containerthree */
+.ccontainerthree {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+.cboxten {
+  height: 30vh;
+  width: 20vw;
+  border: solid 1px black;
+  background-image: url(./cimage/pineapples.jpg);
+  position: relative;
+  border-radius: 5px;
+}
+.ccoverten {
+  position: absolute;
+  height: 30vh;
+  width: 20vw;
+  text-align: center;
+  font-weight: bolder;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: azure;
+  display: none;
+}
+.ccontainerthree h6 {
+  font-weight: bolder;
+  font-size: 30px;
+  margin-top: 60px;
+}
+/* boxeleven */
+.cboxeleven {
+  height: 30vh;
+  width: 20vw;
+  border: solid 1px black;
+  background-image: url(./cimage/apples.webp);
+  position: relative;
+  border-radius: 5px;
+}
+.ccovereleven {
+  position: absolute;
+  height: 30vh;
+  width: 20vw;
+  text-align: center;
+  font-weight: bolder;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: azure;
+  display: none;
+}
+.ccontainerthree h6 {
+  font-weight: bolder;
+  font-size: 30px;
+  margin-top: 60px;
+}
+/* boxtwelve */
+.cboxtwelve {
+  height: 30vh;
+  width: 20vw;
+  border: solid 1px black;
+  background-image: url(./cimage/meat.jpeg);
+  position: relative;
+  border-radius: 5px;
+}
+.ccovertwelve {
+  position: absolute;
+  height: 30vh;
+  width: 20vw;
+  text-align: center;
+  font-weight: bolder;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: azure;
+  display: none;
+}
+.ccontainerthree h6 {
+  font-weight: bolder;
+  font-size: 30px;
+  margin-top: 60px;
+}
+
+/* sectioncfour */
+
+.cfour {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+.cfour h2 {
+  font-weight: bolder;
+  text-align: left;
+  text-decoration: underline 3px rgb(26, 228, 26);
+  margin-left: 140px;
+}
+.cbagone {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+/* containnerfour */
+
+.ccontainerfour {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+.ccontainerfour h6 {
+  font-weight: bolder;
+  font-size: 20px;
+  margin-top: 40px;
+}
+/* box13 */
+.cbox13 {
+  height: 25vh;
+  width: 15vw;
+  border: solid 1px black;
+  background-image: url(./cimage/fresh\ tomatoes.webp);
+  position: relative;
+  border-radius: 5px;
+}
+.ccover13 {
+  position: absolute;
+  height: 25vh;
+  width: 15vw;
+  text-align: center;
+  font-weight: bolder;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: azure;
+  display: none;
+}
+
+/* box14 */
+.cbox14 {
+  height: 25vh;
+  width: 15vw;
+  border: solid 1px black;
+  background-image: url(./cimage/freshcarrots.webp);
+  position: relative;
+  border-radius: 5px;
+  margin-top: 16px;
+}
+.ccover14 {
+  position: absolute;
+  height: 25vh;
+  width: 15vw;
+  text-align: center;
+  font-weight: bolder;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: azure;
+  display: none;
+}
+
+/* box15 */
+.cbox15 {
+  height: 25vh;
+  width: 15vw;
+  border: solid 1px black;
+  background-image: url(./cimage/freshonions.jpg);
+  position: relative;
+  border-radius: 5px;
+  margin-top: 16px;
+}
+.ccover15 {
+  position: absolute;
+  height: 25vh;
+  width: 15vw;
+  text-align: center;
+  font-weight: bolder;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: azure;
+  display: none;
+}
+
+/* ccontainersix */
+.ccontainersix {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+.ccontainersix h6 {
+  font-weight: bolder;
+  font-size: 30px;
+  margin-top: 60px;
+}
+/* box16 */
+.cbox16 {
+  height: 25vh;
+  width: 15vw;
+  border: solid 1px black;
+  background-image: url(./cimage/freshcucumber.jpg);
+  position: relative;
+  border-radius: 5px;
+  margin-top: 16px;
+}
+.ccover16 {
+  position: absolute;
+  height: 25vh;
+  width: 15vw;
+  text-align: center;
+  font-weight: bolder;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: azure;
+  display: none;
+}
+
+/* box17 */
+.cbox17 {
+  height: 25vh;
+  width: 15vw;
+  border: solid 1px black;
+  background-image: url(./cimage/freshcabbage.webp);
+  position: relative;
+  border-radius: 5px;
+  margin-top: 16px;
+}
+.ccover17 {
+  position: absolute;
+  height: 25vh;
+  width: 15vw;
+  text-align: center;
+  font-weight: bolder;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: azure;
+  display: none;
+}
+
+/* box18 */
+.cbox18 {
+  height: 25vh;
+  width: 15vw;
+  border: solid 1px black;
+  background-image: url(./cimage/manyother.webp);
+  position: relative;
+  border-radius: 5px;
+  margin-top: 16px;
+}
+.ccover18 {
+  position: absolute;
+  height: 25vh;
+  width: 15vw;
+  text-align: center;
+  font-weight: bolder;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: azure;
+  display: none;
+}
+
+.ccontainerfive p {
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: bolder;
+}

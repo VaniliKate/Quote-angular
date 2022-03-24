@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light one">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">MARIKITI GREENS</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../ft-homepage/homepage.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categories
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../categories/index.html#vegetables"
+                      >Vegetables</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../categories/index.html#fruits"
+                      >Fruits</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../categories/index.html#cereals"
+                      >Cereals</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../categories/index.html#meat"
+                      >Meat</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item hide-auth">
+                <a class="nav-link" href="../log/log.html">Log in</a>
+              </li>
+              <li class="nav-item hide-auth">
+                <a class="nav-link" href="../log/log.html">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html#about-us">About us</a>
+              </li>
+              <li class="nav-item admin-auth">
+                <a class="nav-link" href="../admin/admin.html">Admin</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Account/account.html">Account</a>
+              </li>
+              <li class="nav-item hide-logged" style="cursor: pointer">
+                <a class="nav-link log-out">Log Out</a>
+              </li>
+            </ul>
+            <div style="margin-right: 30px">
+              <a href="./cart.html"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="cintro">
+      <div class="ctop">
+        <div class="bagtwo">
+          <div class="cleft">
+            <div class="cimageone">
+              <img
+                src="cimage/carpumpkin.webp"
+                alt=""
+                height="120vh"
+                width="100vw"
+              />
+            </div>
+            <div class="cimageone">
+              <img
+                src="cimage/cartoonpuple.webp"
+                alt=""
+                height="120vh"
+                width="100vw"
+              />
+            </div>
+            <div class="cimageone">
+              <img
+                src="cimage/cartoontomato.webp"
+                alt=""
+                height="120vh"
+                width="100vw"
+              />
+            </div>
+          </div>
+          <div class="ctext">
+            <h1>
+              jucy sweety and zesty <br />
+              from our farm to your heart.
+            </h1>
+            <p>
+              Get that crisp sweet juice from every bite of our rich fruit
+              collection.
+            </p>
+            <button class="btn btn-success">
+              <a href="../index.html#about-us">more about us</a>
+            </button>
+          </div>
+          <div class="cright">
+            <div class="cimageone">
+              <img
+                src="cimage/carpumpkin.webp"
+                alt=""
+                height="120vh"
+                width="100vw"
+              />
+            </div>
+            <div class="cimageone">
+              <img
+                src="cimage/cartoonpuple.webp"
+                alt=""
+                height="120vh"
+                width="100vw"
+              />
+            </div>
+            <div class="cimageone">
+              <img
+                src="cimage/cartoontomato.webp"
+                alt=""
+                height="120vh"
+                width="100vw"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- sect ctwo -->
+
+    <section class="ctwo">
+      <h1>our fresh products</h1>
+      <h2>Meat products</h2>
+      <div class="cmeat">
+        <div class="ccontainer">
+          <div class="cboxone">
+            <div class="ccoverone" id="product">
+              <h6>beef</h6>
+              <p>550</p>
+              <p id="cmin">per kg</p>
+              <button id="cart">+</button>
+            </div>
+          </div>
+          <div class="cboxtwo">
+            <div class="ccovertwo" id="product">
+              <h6>chicken</h6>
+
+              <p>550</p>
+              <p id="cmin">per kg</p>
+              <button id="cart">+</button>
+            </div>
+          </div>
+          <div class="cboxthree">
+            <div class="ccoverthree" id="product">
+              <h6>pork</h6>
+              <p>550</p>
+              <p id="cmin">per kg</p>
+              <button id="cart">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="ccontainerone">
+          <div class="cboxfour" id="product">
+            <div class="ccoverfour">
+              <h6>fish</h6>
+              <p>550</p>
+              <p id="cmin">per kg</p>
+              <button id="cart">+</button>
+            </div>
+          </div>
+          <div class="cboxfive">
+            <div class="ccoverfive" id="product">
+              <h6>mutton</h6>
+              <p>550</p>
+              <p id="cmin">per kg</p>
+              <button id="cart">+</button>
+            </div>
+          </div>
+          <div class="cboxsix">
+            <div class="ccoversix">
+              <h6>other varieties</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- sect cthree -->
+
+    <section class="cthree">
+      <h2>fruits</h2>
+      <div class="cfruit">
+        <div class="ccontainertwo">
+          <div class="cboxseven" id="product">
+            <div class="ccoverseven">
+              <h6>Berrys</h6>
+              <p>300</p>
+              <p id="cmin">per kg</p>
+              <button id="cart">+</button>
+            </div>
+          </div>
+          <div class="cboxeight" id="product">
+            <div class="ccovereight">
+              <h6>oranges</h6>
+              <p>80</p>
+              <p id="cmin">per kg</p>
+              <button id="cart">+</button>
+            </div>
+          </div>
+          <div class="cboxnine" id="product">
+            <div class="ccovernine">
+              <h6>Peas</h6>
+              <p>200</p>
+              <p id="cmin">per kg</p>
+              <button id="cart">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="ccontainerthree">
+          <div class="cboxten" id="product">
+            <div class="ccoverten">
+              <h6>Pineapples</h6>
+              <p>180</p>
+              <p id="cmin">per kg</p>
+              <button id="cart">+</button>
+            </div>
+          </div>
+          <div class="cboxeleven">
+            <div class="ccovereleven" id="product">
+              <h6>Apples</h6>
+              <p>400</p>
+              <p id="cmin">per kg</p>
+              <button id="cart">+</button>
+            </div>
+          </div>
+          <div class="cboxtwelve">
+            <div class="ccovertwelve">
+              <h6>other varieties</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>
+        It is summer, and that means it’s <br />
+        the season of watermelon, peaches, and strawberries! All the good stuff!
+      </p>
+    </section>
+    <!-- sect cfour -->
+
+    <section class="cfour">
+      <h2>vegetables</h2>
+      <div class="cbagone">
+        <div class="ccontainerfour">
+          <div class="cbox13" id="product">
+            <div class="ccover13">
+              <h6>
+                fresh <br />
+                tomatoes
+              </h6>
+              <p>50</p>
+              <p id="cmin">per kg</p>
+              <button id="cart">+</button>
+            </div>
+          </div>
+          <div class="cbox14">
+            <div class="ccover14" id="product">
+              <h6>carrots</h6>
+              <p>30</p>
+              <p id="cmin">per kg</p>
+              <button id="cart">+</button>
+            </div>
+          </div>
+          <div class="cbox15">
+            <div class="ccover15">
+              <h6>onions</h6>
+              <p>50</p>
+              <p id="cmin">per kg</p>
+              <button id="cart">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="ccontainerfive">
+          <img src="cimage/basket.jpg" alt="" height="350vh" width="350vw" />
+          <p>
+            “I like fruit baskets because it gives you <br />
+            the ability to mail someone a piece of fruit without appearing
+            insane. <br />
+            Like, if someone just mailed you an apple you’d be like… Huh? What
+            the hell <br />
+            is this? But if it’s in a fruit basket, you’re like… this is nice!
+          </p>
+        </div>
+        <div class="ccontainersix">
+          <div class="cbox16" id="product">
+            <div class="ccover16">
+              <h6>cucumber</h6>
+              <p>70</p>
+              <p id="cmin">per kg</p>
+              <button id="cart">+</button>
+            </div>
+          </div>
+          <div class="cbox17">
+            <div class="ccover17" id="product">
+              <h6>cabbage</h6>
+              <p>40</p>
+              <p id="cmin">per one</p>
+              <button id="cart">+</button>
+            </div>
+          </div>
+          <div class="cbox18">
+            <div class="ccover18">
+              <h6>other varieties</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="cone">
+      <div class="coverlay">
+        <div class="cart" id="cart-items">
+          <h3>Cart</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Order No.</th>
+
+                <th scope="col">Type</th>
+                <th scope="col">kg</th>
+                <th scope="col">Total (Ksh)</th>
+              </tr>
+            </thead>
+            <tbody id="pizza"></tbody>
+          </table>
+          <button type="button" class="btn btn-success check-out">Checkout</button>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="cart.js"></script>
+    <script src="../auth.js"></script>
+  </body>
+</html>

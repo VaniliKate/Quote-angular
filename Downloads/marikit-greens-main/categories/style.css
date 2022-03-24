@@ -1,0 +1,46 @@
+body{
+   font-family: "Poppins";
+   background-color: #198754;
+}
+.navbar {
+  background-color: #abeb45;
+}
+.navbar-nav :visited a,
+.navbar-nav :hover a,
+.navbar-nav :active a,
+.navbar-nav:focus a,
+.navbar-nav :link a {
+  color: red !important;
+}
+.nav-link {
+  color: white !important;
+  font-family: "Poppins" sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  scroll-behavior: smooth;
+}
+
+.product-items{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.category-item{
+  align-items: center;
+  margin:0px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  border:2px solid white;
+  width:50%;
+  padding:10px;
+  margin:10px;
+  border-radius:15px;
+}
+/* .apply-cat-prod{
+  background: url("./vegetables.png");
+} */

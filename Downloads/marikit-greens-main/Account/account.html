@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet" />
+    <link href="./account.css" rel="stylesheet">
+    <title>Profile</title>
+</head>
+
+
+
+<body>
+    <header class="header">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light one">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">MARIKITI GREENS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="../categories/index.html#Vegetables">Vegetables</a></li>
+                                <li><a class="dropdown-item" href="../categories/index.html#Fruits">Fruits</a></li>
+                                <li><a class="dropdown-item" href="../categories/index.html#Cereals">Cereals</a></li>
+                                <li><a class="dropdown-item" href="../categories/index.html#Meat">Meat</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item hide-auth">
+                            <a class="nav-link" href="../log/log.html">Log in</a>
+                        </li>
+                        <li class="nav-item hide-auth">
+                            <a class="nav-link" href="../log/log.html">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#about-us">About us</a>
+                        </li>
+                        <li class="nav-item admin-auth">
+                            <a class="nav-link" href="../admin/admin.html">Admin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./account.html">Account</a>
+                        </li>
+                    </ul>
+                    <div style="margin-right: 30px">
+              <a href="../cart2/cart.html"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="main-account">
+      <div class="container">
+            <h1><u>Profile</u></h1>
+         <div class="profile_box" id="profile">
+           <div class="row">
+            <div class="col-md-6">
+                <img src="./acc-images/CDC_produce.png" id="img-ttle" alt="veggies">
+               <div class="details">
+                <h2><u>Details</u></h2>
+                          <br><br>
+                <div class="img">
+                  <button onclick="myProfile()"><img src="https://img.icons8.com/emoji/96/000000/waving-hand-emoji.png" onmouseenter="bigImg(this)" onmouseleave="smallImg(this)"/>
+                  </button>
+                </div> 
+                    <br><br>
+             <div class="info">
+                  <h6>Name : <span class="nametext"></span></h6>
+                       <br><br>
+                 <h6>Email: <span class="emailtext"></span></h6>
+                       <br><br>
+                       
+                      
+                     </div>
+                     <div class="Details2">
+                         <div class="text-det">
+                         <h6>Vision</h6>
+                         <p>We sell our products for people who live a healthy lifestyle <br>through what they eat, 
+                             who appreciate good food and<br> enjoy our fruits and vegetables. <br>
+                             We make families happier by providing the highest quality, <br>fresh produce.</p>
+                            <br><br>
+                            <p>We believe that leadership is not just a question of size,<br> 
+                                but also a question of attitude. <br>We recognise that trust 
+                                can only be gained over time, <br>
+                                through the consistent delivery of our promises.</p>
+                            </div>
+                            </div>
+                            </div>
+                  </div>
+                  
+             <div class="col-md-6">
+                  <img src="./acc-images/fruit.jpg" alt="pic" id="next-pic" class="rounded" width="600px" height="650px">
+                <br><br>
+              </div>
+              </div>
+              <div id="wrapper">
+                  <div class="row">
+                      <div class="col-md-4">
+                        </div>
+                       <br><br>
+                <div id="copyright">
+                     <p><span>&#169;</span>Copyright 2022</p>
+                </div>
+                <div id="icon">
+                    <img src="./acc-images/f.png"  width="20" height="20">
+                    <img src="./acc-images/i.png" width="20" height="20">
+                    <img src="./acc-images/p.png"width="20" height="20">
+                     <img src="./acc-images/t.png"width="20" height="20">
+                     <img src="./acc-images/y.png"width="20" height="20">
+                 </div>
+                </div>
+            </div>
+              <br><br>
+         </div>
+         <script>
+              function bigImg(x) {
+        x.style.height = "54px";
+        x.style.width = "54px";
+      }
+      
+      function smallImg(x) {
+        x.style.height = "22px";
+        x.style.width = "22px";
+      }
+    //   function myProfile(){
+    //       let myName = localStorage.sessionStorage("name");
+    //       let myEmail = localStorage.sessionStorage("email");
+    //         document.getElementsByClassName("nametext").innerHTML = myName;
+    //         document.getElementsByClassName("emailtext").innerHTML = myEmail;
+    //   }
+       
+         </script>
+      </main>
+     
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" 
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" 
+        crossorigin="anonymous">
+    </script>
+     <script src="https://code.jquery.com/jquery-3.6.0.js" 
+     integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous">
+   </script>
+    <script src="./account.js"></script>
+   <script src="../auth.js"></script>
+</body>
+</html>

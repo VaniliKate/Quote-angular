@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <!-- Font Awesome CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="./css/delivery.css" rel="stylesheet" type="text/css">
+    
+
+    <title>Marikiti Greens</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light one">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">MARIKITI GREENS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="../categories/index.html#Vegetables">Vegetables</a></li>
+                                <li><a class="dropdown-item" href="../categories/index.html#Fruits">Fruits</a></li>
+                                <li><a class="dropdown-item" href="../categories/index.html#Cereals">Cereals</a></li>
+                                <li><a class="dropdown-item" href="../categories/index.html#Meat">Meat</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item hide-auth">
+                            <a class="nav-link" href="../log/log.html">Log in</a>
+                        </li>
+                        <li class="nav-item hide-auth">
+                            <a class="nav-link" href="../log/log.html">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#about-us">About us</a>
+                        </li>
+                        <li class="nav-item admin-auth">
+                            <a class="nav-link" href="../admin/admin.html">Admin</a>
+                        </li>
+                        <li class="nav-item hide-logged">
+                            <a class="nav-link" href="../Account/account.html">Account</a>
+                        </li>
+                        <li class="nav-item hide-logged" style="cursor: pointer;">
+                            <a class="nav-link log-out">Log Out</a>
+                        </li>
+                    </ul>
+                    <div style="margin-right: 30px">
+              <a href="../cart2/cart.html"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+<!-- delivery start -->
+
+<div class="container py-5">
+  <div class="options">
+    <div id="deliveryoptions">
+      <p>Would you like to:</p>
+  
+  <div class="flex-parent jc-center">
+      <button type="submit" name="pickup" onclick="pickUp()" class="btn" id="pickup"><i class="fas fa-store"></i> Pick it Up</button>
+      <button type="submit" name="deliver" onclick="getItDelivered()" class="btn" id="deliver"><i class="fas fa-truck"></i> Get it Delivered</button>
+  </div>
+    </div>
+  </div>
+  <div class="deliversection">
+  
+  <div class="row d-flex justify-content-center align-items-center">
+    <div class="col">
+      <div class="card my-4 shadow-3">
+        <div class="row g-0">
+          
+            <div class="mask">
+              <div class=" justify-content-center align-items-center h-100">
+                <div class=" text-center" style="margin-top: 130px;">
+                  <i class="fas fa-truck fa-3x" style="color: #ABEB45"></i>
+                  <p class="text-white title-style">Marikiti Greens Delivery</p>
+                  <p class="text-white mb-0"></p>
+
+                  <figure class="text-center mb-0">
+                    <blockquote class="blockquote text-white">
+                      <p class="pb-3">
+                        <i class="fas fa-quote-left fa-xs"
+                          style="color: #ABEB45;"></i>
+                        <span class="lead title-quote">Everything at your doorstep.</span>
+                        <i class="fas fa-quote-right fa-xs"
+                          style="color: #ABEB45;"></i>
+                      </p>
+                    </blockquote>
+
+                  </figure>
+                </div>
+              </div>
+            </div>
+        <form>
+          <div class="col delivery-details">
+            <div class="card-body p-md-5 text-black justify-content-center align-items-center h-100">
+              <h3 class="mb-4 text-uppercase">Delivery Details</h3>
+
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <input type="text" id="firstname" class="form-control form-control-lg" required/>
+                    <label class="form-label" for="firstname">First Name</label>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <input type="text" id="lastname" class="form-control form-control-lg" required/>
+                    <label class="form-label" for="lastname">Last name</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <input type="tel" id="phonenumber" class="form-control form-control-lg" required/>
+                    <label class="form-label" for="phonenumber">Phone Number</label>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <input type="text" id="location" class="form-control form-control-lg" required/>
+                    <label class="form-label" for="location">Location</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-center pt-3">
+                <button type="button" class="btn btn-success btn-lg ms-2" id="deliverysubmitbutton" onclick="formInputs()">Submit</button>
+              </div>
+            </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+<!-- delivery feedback section start-->
+<div class="card-delivery">
+    <p class="delivery-feedback" style="margin-top: 10%; margin-left: 35%; margin-right: 30%;"></p>
+  <div id="pickup-button">
+    <button type="submit" class="btn go-home" id="pickup-button" style="color: white; background-color: #ABEB45; margin-top: 30%; margin-left: 49%;">home</button>
+  </div>
+</div>
+
+<!-- delivery feedback section end-->
+
+ <div class="pickup-feedback">
+   <div class="row">
+     <div class="col">
+   <card class="card-pickup">
+   <div>
+     <p class="p1">Thank you for shopping with us.</br>
+        Please pick up your greens from</br>
+       our store in the next 30 minutes.</p>
+      <button type="button" class="btn go-home" id="pickup-btn" style="color: white; background-color: #ABEB45;margin-top: 32%;">home</button>
+   </div>
+   </card>
+   </div>
+   </div>
+ </div>
+
+
+
+
+<!-- delivery end -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    
+    <script src="./js/delivery.js"></script>
+<script src="../auth.js"></script>
+</body>
+
+</html>
