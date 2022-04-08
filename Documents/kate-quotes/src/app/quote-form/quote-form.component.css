@@ -1,0 +1,49 @@
+$ruler: 16px;
+$color-red: #AE1100;
+$color-bg: #EBECF0;
+$color-shadow: #BABECC;
+$color-white: #FFF;
+
+    .form-control {
+        background-color: #073599;
+        color: #fdee19;
+        border-color: #fdee19;
+        border-radius: 10px;
+    }
+    
+    hr {
+        background-color: #073599;
+    }
+    
+    #form {
+        padding: $ruler;
+  width: $ruler*20;
+  margin: 0 auto;
+  border-radius: 40px;
+  box-shadow: 3px 3px 20px #ff3352;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        #form {
+            position: absolute;
+            width: 100%;
+        }
+    }
+    
+    p,
+    label {
+        font-size: 24px;
+    }
+    
+    button {
+        border: 0;
+        outline: 0;
+        font-size: $ruler;
+        border-radius: $ruler*20;
+        padding: $ruler;
+        background-color:$color-bg;
+        text-shadow: 1px 1px 0 $color-white;
+        font-family: 'dosis-bold';
+    }

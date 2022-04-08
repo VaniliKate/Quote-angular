@@ -1,0 +1,25 @@
+.score {
+    color: #00A6ED;
+}
+
+button {
+    font-size: 18px;
+    border-radius: 25px;
+    font-family: 'dosis-bold';
+    border: 2px solid #eef0f2;
+    border-radius: 40px;
+    box-shadow: 3px 3px 20px #ff3352;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#point:hover,
+#point:focus {
+    background-color: transparent;
+    color: #eef0f2;
+    box-shadow: none;
+}
+
+#vote:focus {
+    box-shadow: none;
+}
