@@ -1,9 +1,10 @@
-# About This Akan name generator
+# Quote generator
 
-This project is based on [Javascript CSS HTML](#TechStack).
+![alt text](src/assets/quote-home.png)
 
-The Akan people of Ghana frequently name their children after the day of the week they were born and the order in which they were born. These "day names" have further meanings concerning the soul and character of the person.
-This Web application will take in a user's year of birth, month of birth, day of birth and selected gender.It will then be possible to determine the exact day of the week the user was born and give them an Akan name based on their gender.
+This project is based on [Angular TypeScript Javascript CSS Bootsrap HTML](#TechStack).
+
+The quote generator will allow the user to add a quote and have it displayed, they will be able to upvote and downvote the quote. Any quote with the highest upvotes will be highlighted. It will also show how long it has been since the quote was added. 
 
 ## Author
 Kate Vanili
@@ -25,25 +26,28 @@ Make sure you have a browser with javascript enabled.
 ## Technologies
 
 ---
+-   Angular
+-   TypeScript
 -   Javascript
 -   CSS
+-   Bootstrap
 -   HTML
 
 ### Setup Environment
 
 1. Clone the repo : `git clone https://github.com/katevanili/akan-generator.git`
-2. Locate `index.html` from the file
-3. Run `index.html` file in your favorite browser
+2. Run `npm install` in the folder.
+3. Run `ng serve --open` to access the application on your web.
 
 ## Application features
 
 ---
--   Input of year of birth.
--   Input month of birth.
--   Input day of birth.
--   Select Gender.
--   Output Akan name.
+-  Input quote
+-  Output quote.
+-  Upvote a quote
+-  Downvote a quote.
+-  See duration since the time was added.
 
-![alt text](images/home.jpg)
 
-![alt text](images/output.jpg)
+
+
