@@ -1,6 +1,6 @@
 # Quote generator
 
-![alt text](src/assets/quote-home.png)
+![alt text](src/assets/quotes-home.png)
 
 This project is based on [Angular TypeScript Javascript CSS Bootsrap HTML](#TechStack).
 
