@@ -7,14 +7,13 @@
                 <h4>GITHUB SEARCH</h4>
             </div>
             <div class="card-body">
-                <form class="form-inline">
+                <form class="form-inline" (submit)="searchUser()">
                     <div class="form-group">
                         <input [(ngModel)]="githubUserQuery" name="user" type="search" class="form-control" placeholder="Find user" >
                     </div>
                     <div>
-                        <input type="submit" value="submit" class="btn btn-secondary btn-small">
+                        <input type="submit" value="SEARCH" class="btn btn-secondary btn-small">
                     </div>
-                    {{githubUserQuery}}
                 </form>
             </div>
         </div>
